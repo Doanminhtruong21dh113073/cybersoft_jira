@@ -12,7 +12,7 @@ const Sidebar: React.FC = (props: Props) => {
         <div className="p-2.5 mt-1 flex items-center rounded-md ">
           <i className="bi bi-app-indicator px-2 py-1 bg-blue-600 rounded-md" />
           <h1 className="text-[15px]  ml-3 text-xl text-gray-200 font-bold">
-             CyberSoft Jira
+            CyberSoft Jira
           </h1>
           <i className="bi bi-x ml-20 cursor-pointer lg:hidden" />
         </div>
@@ -28,20 +28,24 @@ const Sidebar: React.FC = (props: Props) => {
               placeholder="Serach"
             />
           </div>
-          <div className="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
-            <i className="bi bi-house-door-fill" />
-            <span className="text-[15px] ml-4 text-gray-200">Home</span>
-          </div>
-          <div className="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
-            <i className="bi bi-bookmark-fill" />
-            <span className="text-[15px] ml-4 text-gray-200">Bookmark</span>
-          </div>
+          <NavLink to={""}>
+            <div className="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
+              <i className="bi bi-house-door-fill" />
+              <span className="text-[15px] ml-4 text-gray-200">Home</span>
+            </div>
+          </NavLink>
+          <NavLink to={"contact"}>
+            <div className="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
+              <i className="bi bi-bookmark-fill" />
+              <span className="text-[15px] ml-4 text-gray-200">Contact</span>
+            </div>
+          </NavLink>
           <hr className="my-4 text-gray-600" />
           <div className="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
             <i className="bi bi-envelope-fill" />
             <span className="text-[15px] ml-4 text-gray-200">Messages</span>
           </div>
-          <div className="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
+          {/* <div className="p-2.5 mt-2 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
             <i className="bi bi-chat-left-text-fill" />
             <div className="flex justify-between w-full items-center">
               <span className="text-[15px] ml-4 text-gray-200">Chatbox</span>
@@ -63,7 +67,7 @@ const Sidebar: React.FC = (props: Props) => {
             <h1 className="cursor-pointer p-2 hover:bg-gray-700 rounded-md mt-1">
               Friends
             </h1>
-          </div>
+          </div> */}
           <div className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer  hover:bg-blue-600">
             <i className="bi bi-box-arrow-in-right" />
             <span className="text-[15px] ml-4 text-gray-200">Logout</span>

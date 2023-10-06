@@ -1,0 +1,3 @@
+export const USER_SIGNIN_SAGA = "USER_SIGNIN_SAGA";
+
+export const USER_SIGNUP_SAGA = "USER_SIGNUP_SAGA";
